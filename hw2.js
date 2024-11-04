@@ -6,4 +6,6 @@ function pow(base, exponent) {
     return result;
 }
 
-pow(2, 3);
+let test = pow(2, 3);
+
+console.log(test);
