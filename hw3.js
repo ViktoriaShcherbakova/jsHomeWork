@@ -1,4 +1,4 @@
-function checkProbabilityTheory(min, max, count) {
+function checkProbabilityTheory(count, min = 100, max = 1000) {
     let arrayOfNumbers = [];
     for (let i = 0; i < count; i++) {
         let random = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -23,5 +23,5 @@ function checkProbabilityTheory(min, max, count) {
     }
 }
 
-let test = checkProbabilityTheory(100, 1000, 10000);
+let test = checkProbabilityTheory(10000);
 console.log(test);
